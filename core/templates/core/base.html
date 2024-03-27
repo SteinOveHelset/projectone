@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>{% block title %}{% endblock %} | ProjectOne</title>
+  </head>
+
+  <body class="bg-slate-600">
+    <nav class="py-6 px-20 flex flex-row justify-between items-center bg-slate-800">
+      <div>
+        <a href="/" class="text-2xl text-white">ProjectOne</a>
+      </div>
+
+      <div class="flex flex-row gap-6">
+        <a href="/" class="font-bold text-white">Home</a>
+        <a href="/about/" class="font-bold text-white">About</a>
+      </div>
+    </nav>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>
